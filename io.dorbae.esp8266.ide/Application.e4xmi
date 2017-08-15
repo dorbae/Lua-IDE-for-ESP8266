@@ -2,14 +2,16 @@
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_6wlLcMgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.application" bindingContexts="_6wlLecgZEeSyMNYR5xypkQ">
   <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.window.main" label="ESP8266 IDE" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_6wlLkMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.ide.perspectivestack">
-      <children xsi:type="advanced:Perspective" xmi:id="_6wlLkcgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.perspective.sample">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.partsashcontainer.sample">
+      <children xsi:type="advanced:Perspective" xmi:id="_6wlLkcgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.perspective.ide.lua" accessibilityPhrase="" label="ESP8266 Lua IDE Perspective" tooltip="ESP8266 Lua IDE Perspective">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.partsashcontainer.editor" horizontal="true">
           <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.partstack.sample">
             <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.part.sample" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.SamplePart" label="Sample Part"/>
           </children>
         </children>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_o8jFMIG_EeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.partsashcontainer.explorer" horizontal="true">
+          <children xsi:type="basic:Part" xmi:id="_ewQt0IGzEeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.part.luascript" label="Script Navigator" tooltip="Lua Script Navigator"/>
+        </children>
       </children>
-      <children xsi:type="advanced:Perspective" xmi:id="_3UgOwIGqEeeXU4zCGNin2g" elementId="io.dorbae.esp8266.ide.perspective.ide.lua" label="ESP8266 Lua IDE Perspective" tooltip="ESP8266 Lua IDE Perspective"/>
     </children>
     <mainMenu xmi:id="_6wlLicgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.menu">
       <children xsi:type="menu:Menu" xmi:id="_6wlLisgZEeSyMNYR5xypkQ" elementId="file" label="File">
