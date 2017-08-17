@@ -9,7 +9,7 @@
           </children>
         </children>
         <children xsi:type="basic:PartSashContainer" xmi:id="_o8jFMIG_EeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.partsashcontainer.explorer" horizontal="true">
-          <children xsi:type="basic:Part" xmi:id="_ewQt0IGzEeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.part.luascript" label="Script Navigator" tooltip="Lua Script Navigator"/>
+          <children xsi:type="basic:Part" xmi:id="_ewQt0IGzEeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.part.lua.explorer" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.LuaScriptExplorer" label="Script Explorer" tooltip="Lua Script Explorer"/>
         </children>
       </children>
     </children>
