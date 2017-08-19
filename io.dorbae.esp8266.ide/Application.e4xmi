@@ -3,13 +3,14 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.window.main" label="ESP8266 IDE" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_6wlLkMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.ide.perspectivestack">
       <children xsi:type="advanced:Perspective" xmi:id="_6wlLkcgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.perspective.ide.lua" accessibilityPhrase="" label="ESP8266 Lua IDE Perspective" tooltip="ESP8266 Lua IDE Perspective">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_o8jFMIG_EeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.partsashcontainer.explorer" containerData="5000" horizontal="true">
+          <children xsi:type="basic:Part" xmi:id="_ewQt0IGzEeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.part.lua.explorer" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.LuaScriptExplorer" label="Script Explorer" tooltip="Lua Script Explorer"/>
+          <children xsi:type="basic:Part" xmi:id="_mehIcIRwEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.part.propertiespart" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.PropertiesPart" label="Properties Part" tooltip="Properties Part"/>
+        </children>
         <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.partsashcontainer.editor" horizontal="true">
           <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.partstack.sample">
             <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.part.sample" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.SamplePart" label="Sample Part"/>
           </children>
-        </children>
-        <children xsi:type="basic:PartSashContainer" xmi:id="_o8jFMIG_EeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.partsashcontainer.explorer" horizontal="true">
-          <children xsi:type="basic:Part" xmi:id="_ewQt0IGzEeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.part.lua.explorer" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.LuaScriptExplorer" label="Script Explorer" tooltip="Lua Script Explorer"/>
         </children>
       </children>
     </children>
@@ -27,6 +28,16 @@
       <children xsi:type="menu:ToolBar" xmi:id="_6wlLlsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.main.toolbar">
         <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLl8gZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.handleditem.trimbar.top.open" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/sample.png" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
         <children xsi:type="menu:HandledToolItem" xmi:id="_6wlLmMgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.handleditem.trimbar.top.save" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/save_edit.png" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
+        <children xsi:type="menu:ToolBarSeparator" xmi:id="_sTnJEIOrEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.toolbarseparator.0"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_RxTP8IQXEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handledtoolitem.system.openport" label="Open Serial Port" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/command/connect.png" tooltip="Open Serial Port" command="_8aYLIIQVEeer0YXqITz4sA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_Q5naAIQXEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handledtoolitem.system.closeport" label="Close Serial Port" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/command/disconnect.png" tooltip="Close Serial Port" command="_egTHkIQWEeer0YXqITz4sA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_XLCpUIOqEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handledtoolitem.system.restart" label="Restart" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/command/arrow_refresh.png" tooltip="Restart ESP8266" command="_a16_oIOqEeer0YXqITz4sA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_iEahcIO8Eeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handledtoolitem.system.showheap" label="Show Heap" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/command/basket.png" tooltip="Diaply Heap Memory" command="_ZytxAIO8Eeer0YXqITz4sA"/>
+      </children>
+    </trimBars>
+    <trimBars xmi:id="_6_FGoIRpEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.trimbar.bottom" side="Bottom">
+      <children xsi:type="menu:ToolBar" xmi:id="_97qMgIRpEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.toolbar.statusbar">
+        <children xsi:type="menu:ToolControl" xmi:id="__kgZoIRpEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.toolcontrol.statusbar" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.toolcontrols.StatsuBarToolControl"/>
       </children>
     </trimBars>
   </children>
@@ -34,6 +45,10 @@
   <handlers xmi:id="_6wlLgcgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.handler.openCommand" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.OpenHandler" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_6wlLhMgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.handler.saveCommand" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.SaveHandler" command="_6wlLg8gZEeSyMNYR5xypkQ"/>
   <handlers xmi:id="_6wlLh8gZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.handler.aboutCommand" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.AboutHandler" command="_6wlLhsgZEeSyMNYR5xypkQ"/>
+  <handlers xmi:id="_H4pRAIMgEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handler.system.restart" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.system.RestartHandler" command="_a16_oIOqEeer0YXqITz4sA"/>
+  <handlers xmi:id="_t3NtAIOvEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handler.system.showheap" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.system.ShowHeapHandler" command="_ZytxAIO8Eeer0YXqITz4sA"/>
+  <handlers xmi:id="_Yjyf8IPhEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handler.system.openport" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.system.OpenPortHandler" command="_8aYLIIQVEeer0YXqITz4sA"/>
+  <handlers xmi:id="_cRYY8IQWEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handler.sytstem.closeport" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.system.ClosePortHandler" command="_egTHkIQWEeer0YXqITz4sA"/>
   <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
     <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
     <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
@@ -48,6 +63,10 @@
   <commands xmi:id="_6wlLgMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.open" commandName="openCommand"/>
   <commands xmi:id="_6wlLg8gZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
   <commands xmi:id="_6wlLhsgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_a16_oIOqEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.command.system.restart" commandName="systemRestartCommand" description="Restart ESP8266" category="_PwN74IO9Eeer0YXqITz4sA"/>
+  <commands xmi:id="_ZytxAIO8Eeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.command.system.showheap" commandName="showHeapCommand" description="Display Avaliable Heap Memory" category="_PwN74IO9Eeer0YXqITz4sA"/>
+  <commands xmi:id="_8aYLIIQVEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.command.system.openport" commandName="openPortCommand" description="Open Serial Port" category="_PwN74IO9Eeer0YXqITz4sA"/>
+  <commands xmi:id="_egTHkIQWEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.command.system.closeport" commandName="closePortCommand" description="Close Serial Port" category="_PwN74IO9Eeer0YXqITz4sA"/>
   <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -55,4 +74,5 @@
   <addons xmi:id="_6wlLdsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_6wlLd8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_6wlLeMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <categories xmi:id="_PwN74IO9Eeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.category.system" name="systemCommandCategory" description="Command category related with system"/>
 </application:Application>
