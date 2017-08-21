@@ -18,4 +18,9 @@ public class CommonConstant {
 	public static java.util.concurrent.atomic.AtomicBoolean isPortOpened = new java.util.concurrent.atomic.AtomicBoolean( false);
 	public static jssc.SerialPort serialPort = null;
 	
+	
+	//
+	// Event Topips
+	//
+	public static final String EVENT_TOPIC_SERIAL_PORT_CHANGED = "evtTopicPortChanged";
 }

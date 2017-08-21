@@ -3,14 +3,9 @@
   <children xsi:type="basic:TrimmedWindow" xmi:id="_6wlLccgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.window.main" label="ESP8266 IDE" width="500" height="400">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_6wlLkMgZEeSyMNYR5xypkQ" elementId="org.eclipse.ui.ide.perspectivestack">
       <children xsi:type="advanced:Perspective" xmi:id="_6wlLkcgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.perspective.ide.lua" accessibilityPhrase="" label="ESP8266 Lua IDE Perspective" tooltip="ESP8266 Lua IDE Perspective">
-        <children xsi:type="basic:PartSashContainer" xmi:id="_o8jFMIG_EeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.partsashcontainer.explorer" containerData="5000" horizontal="true">
-          <children xsi:type="basic:Part" xmi:id="_ewQt0IGzEeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.part.lua.explorer" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.LuaScriptExplorer" label="Script Explorer" tooltip="Lua Script Explorer"/>
+        <children xsi:type="basic:PartSashContainer" xmi:id="_o8jFMIG_EeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.partsashcontainer.explorer" containerData="5000">
+          <children xsi:type="basic:Part" xmi:id="_ewQt0IGzEeeO8MKpZuGUZA" elementId="io.dorbae.esp8266.ide.part.lua.explorer" containerData="8000" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.LuaScriptExplorer" label="Script Explorer" tooltip="Lua Script Explorer"/>
           <children xsi:type="basic:Part" xmi:id="_mehIcIRwEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.part.propertiespart" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.PropertiesPart" label="Properties Part" tooltip="Properties Part"/>
-        </children>
-        <children xsi:type="basic:PartSashContainer" xmi:id="_6wlLksgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.partsashcontainer.editor" horizontal="true">
-          <children xsi:type="basic:PartStack" xmi:id="_6wlLk8gZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.partstack.sample">
-            <children xsi:type="basic:Part" xmi:id="_6wlLlMgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.part.sample" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.parts.SamplePart" label="Sample Part"/>
-          </children>
         </children>
       </children>
     </children>

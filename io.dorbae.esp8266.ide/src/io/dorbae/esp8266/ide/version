@@ -1,0 +1,8 @@
+#################################################################################
+#
+# Version		Date		Modifier						Description
+#
+#################################################################################
+# 0.0.2			2017-08-21 dorbae(dorbae.io@gmail.com)		Add Properites Part and port open/close command.
+# 0.0.1			2017-08-19	dorbae(dorbae.io@gmail.com)		Testing serial port open/close
+# 0.0.0			2017-08-15	dorbae(dorbae.io@gmail.com)		Initialize

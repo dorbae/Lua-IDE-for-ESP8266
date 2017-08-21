@@ -6,19 +6,22 @@
  *
  *********************************************************
  *
+ * @version 1.1.00	2017. 8. 21.	dorbae(dorbae.io@gmail.com)	Send event to broker for executing \@CanExecute and changing properties part
  * @version 1.0.00	2017. 8. 18.	dorbae(dorbae.io@gmail.com)	Initialize
  *
  * @since 2017. 8. 18.
  * @author dorbae(dorbae.io@gmail.com)	Initialize
- (
+ *
  */
 package io.dorbae.esp8266.ide.handlers.system;
+
+import javax.inject.Inject;
 
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.eclipse.e4.core.di.annotations.CanExecute;
 import org.eclipse.e4.core.di.annotations.Execute;
-import org.eclipse.e4.ui.internal.workbench.WorkbenchLogger;
-import org.eclipse.e4.ui.workbench.IWorkbench;
+import org.eclipse.e4.core.services.events.IEventBroker;
+import org.eclipse.e4.ui.workbench.UIEvents;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
@@ -32,6 +35,9 @@ import jssc.SerialPortList;
 public class OpenPortHandler {
 	
 	private final org.slf4j.Logger LOG = org.slf4j.LoggerFactory.getLogger( OpenPortHandler.class);
+	
+//	@Inject private EPartService partService;
+	@Inject IEventBroker broker;
 	
 	/**
 	 * 
@@ -64,14 +70,25 @@ public class OpenPortHandler {
 				LOG.info( "Open Port[{}].", selectedPortName);
 				io.dorbae.esp8266.ide.CommonConstant.isPortOpened.set( true);
 				
-				try {
-					Thread.currentThread().sleep( 10000L);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-				io.dorbae.esp8266.ide.CommonConstant
-				.serialPort.writeString( "=node.restart()");
+				// Send @CanExecute Event
+				broker.send( UIEvents.REQUEST_ENABLEMENT_UPDATE_TOPIC, UIEvents.ALL_ELEMENT_ID);
+				
+//				java.util.Map< String, Object> m = new java.util.HashMap< String, Object>();
+//				m.put( "a", io.dorbae.esp8266.ide.CommonConstant.serialPort);
+				LOG.debug( "send topic");
+				broker.send( CommonConstant.EVENT_TOPIC_SERIAL_PORT_CHANGED, io.dorbae.esp8266.ide.CommonConstant.serialPort);
+
+				/*
+				 * Testing ESP8266 Command
+				 * 
+				 */
+//				try {
+//					Thread.currentThread().sleep( 10000L);
+//				} catch (InterruptedException e) {
+//					// TODO Auto-generated catch block
+//					e.printStackTrace();
+//				}
+//				io.dorbae.esp8266.ide.CommonConstant.serialPort.writeString( "=node.restart()");
 				
 			} else {
 				LOG.warn( "Failed to open serial port.");

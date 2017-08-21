@@ -19,7 +19,9 @@ Require-Bundle: javax.inject;bundle-version="0.0.0",
  org.apache.log4j,
  org.slf4j.api,
  org.apache.commons.io,
- org.apache.commons.lang3
+ org.apache.commons.lang3,
+ org.eclipse.osgi.services,
+ org.eclipse.e4.core.services
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Import-Package: javax.annotation;version="1.0.0";resolution:=optional,
  javax.inject;version="1.0.0"
