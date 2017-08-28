@@ -51,10 +51,8 @@ public class PropertiesPart {
 		public String getColumnText(Object element, int columnIndex) {
 			switch ( columnIndex) {
 			case 0:
-				System.out.println( "0, " + ( ( String[])element)[ 0]);
 				return ( ( String[])element)[ 0];
 			case 1:
-				System.out.println( "1");
 				return ( ( String[])element)[ 1];
 			default:
 				return "";

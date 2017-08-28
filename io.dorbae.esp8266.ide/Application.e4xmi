@@ -28,6 +28,7 @@
         <children xsi:type="menu:HandledToolItem" xmi:id="_Q5naAIQXEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handledtoolitem.system.closeport" label="Close Serial Port" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/command/disconnect.png" tooltip="Close Serial Port" command="_egTHkIQWEeer0YXqITz4sA"/>
         <children xsi:type="menu:HandledToolItem" xmi:id="_XLCpUIOqEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handledtoolitem.system.restart" label="Restart" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/command/arrow_refresh.png" tooltip="Restart ESP8266" command="_a16_oIOqEeer0YXqITz4sA"/>
         <children xsi:type="menu:HandledToolItem" xmi:id="_iEahcIO8Eeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handledtoolitem.system.showheap" label="Show Heap" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/command/basket.png" tooltip="Diaply Heap Memory" command="_ZytxAIO8Eeer0YXqITz4sA"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_i1HVcIuaEeeKVfmmTqw8cQ" elementId="io.dorbae.esp8266.ide.handledtoolitem.system.getchipid" label="Get Chip ID" iconURI="platform:/plugin/io.dorbae.esp8266.ide/icons/command/id.png" tooltip="Get Chip ID" command="_ZYbYkIuaEeeKVfmmTqw8cQ"/>
       </children>
     </trimBars>
     <trimBars xmi:id="_6_FGoIRpEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.trimbar.bottom" side="Bottom">
@@ -44,6 +45,7 @@
   <handlers xmi:id="_t3NtAIOvEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handler.system.showheap" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.system.ShowHeapHandler" command="_ZytxAIO8Eeer0YXqITz4sA"/>
   <handlers xmi:id="_Yjyf8IPhEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handler.system.openport" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.system.OpenPortHandler" command="_8aYLIIQVEeer0YXqITz4sA"/>
   <handlers xmi:id="_cRYY8IQWEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.handler.sytstem.closeport" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.system.ClosePortHandler" command="_egTHkIQWEeer0YXqITz4sA"/>
+  <handlers xmi:id="_fEyJUIuYEeeKVfmmTqw8cQ" elementId="io.dorbae.esp8266.ide.handler.system.getchipid" contributionURI="bundleclass://io.dorbae.esp8266.ide/io.dorbae.esp8266.ide.handlers.system.GetChipIDHandler" command="_ZYbYkIuaEeeKVfmmTqw8cQ"/>
   <bindingTables xmi:id="_6wlLfsgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.bindingtable" bindingContext="_6wlLecgZEeSyMNYR5xypkQ">
     <bindings xmi:id="_6wlLf8gZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.keybinding.m1q" keySequence="M1+Q" command="_6wlLfMgZEeSyMNYR5xypkQ"/>
     <bindings xmi:id="_6wlLgsgZEeSyMNYR5xypkQ" elementId="io.dorbae.esp8266.ide.keybinding.m1o" keySequence="M1+O" command="_6wlLgMgZEeSyMNYR5xypkQ"/>
@@ -62,6 +64,7 @@
   <commands xmi:id="_ZytxAIO8Eeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.command.system.showheap" commandName="showHeapCommand" description="Display Avaliable Heap Memory" category="_PwN74IO9Eeer0YXqITz4sA"/>
   <commands xmi:id="_8aYLIIQVEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.command.system.openport" commandName="openPortCommand" description="Open Serial Port" category="_PwN74IO9Eeer0YXqITz4sA"/>
   <commands xmi:id="_egTHkIQWEeer0YXqITz4sA" elementId="io.dorbae.esp8266.ide.command.system.closeport" commandName="closePortCommand" description="Close Serial Port" category="_PwN74IO9Eeer0YXqITz4sA"/>
+  <commands xmi:id="_ZYbYkIuaEeeKVfmmTqw8cQ" elementId="io.dorbae.esp8266.ide.command.system.getchipid" commandName="getChipIDCommand" description="Get Chip ID" category="_PwN74IO9Eeer0YXqITz4sA"/>
   <addons xmi:id="_6wlLcsgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_6wlLc8gZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_6wlLdMgZEeSyMNYR5xypkQ" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
